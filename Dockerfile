@@ -1,4 +1,4 @@
-FROM node:14-buster AS development
+FROM node:18-buster AS development
 
 WORKDIR /usr/src/app
 
@@ -12,7 +12,7 @@ COPY . .
 
 RUN npm run build
 
-FROM node:14-buster as production
+FROM node:18-buster as production
 
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
