@@ -1,4 +1,4 @@
-FROM node:18-buster AS development
+FROM node:current-bullseye-slim AS development
 
 WORKDIR /usr/src/app
 
@@ -12,7 +12,7 @@ COPY . .
 
 RUN npm run build
 
-FROM node:18-buster as production
+FROM node:current-bullseye-slim as production
 
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
