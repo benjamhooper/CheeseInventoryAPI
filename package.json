@@ -29,7 +29,7 @@
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/swagger": "^5.0.9",
-    "@nestjs/typeorm": "^8.0.2",
+    "@nestjs/typeorm": "^8.1.4",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
